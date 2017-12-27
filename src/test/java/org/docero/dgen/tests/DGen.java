@@ -45,8 +45,9 @@ abstract class DGen {
         Long f4;
         @DGenDoc("поле 5")
         String fs;
-        @JsonIgnore
         @DGenDoc("поле 6")
         transient List<String> fsl;
+        @JsonIgnore
+        abstract List<String> getFsl();
     }
 }

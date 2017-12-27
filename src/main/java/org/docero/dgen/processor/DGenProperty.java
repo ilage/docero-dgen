@@ -191,7 +191,7 @@ public class DGenProperty {
     }
 
     public List<? extends AnnotationMirror> getSetterAnnotations() {
-        return concat(annotations, getterAnnotations);
+        return concat(annotations, setterAnnotations);
     }
 
     @SuppressWarnings("unchecked")
